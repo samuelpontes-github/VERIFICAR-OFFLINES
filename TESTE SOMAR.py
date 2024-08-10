@@ -1,5 +1,4 @@
-def SOMAR():
-  return 100+100
+def SOMAR(a,b):
+  return a+b
 
 print('O CÓDIGO DO GITHUB TÁ FUNCIONANDO E ATUALIZOU !')
-print(SOMAR())
