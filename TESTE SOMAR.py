@@ -1,2 +1,4 @@
-def SOMAR(a,b):
-  return a+b
+def SOMAR():
+  return 10+10
+
+print(SOMAR())
