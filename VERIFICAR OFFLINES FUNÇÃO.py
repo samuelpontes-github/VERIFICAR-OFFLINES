@@ -1,4 +1,4 @@
-def VERIFICAR_OFFLINES(placas, placa):
+def VERIFICAR_OFFLINES(placas, placa, rows, devices_status):
      # SE O RASTREADOR FOR PRINCIPAL ELE VAI EXECUTAR O QUE TÁ DENTRO DO IF (ELE VAI PROCURAR PELO PRINCIPAL)
     if placas[placa][1] == 'RASTREADOR PRINCIPAL':      
             if len(devices_status) > 2:
