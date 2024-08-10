@@ -105,3 +105,4 @@ def VERIFICAR_OFFLINES(placas, placa, rows, devices_status):
                             break
 
 print('FUNÇÃO VERIFICAR OFFLINES DO GITHUB CARREGADO COM SUCESSO !')
+print('------------')
