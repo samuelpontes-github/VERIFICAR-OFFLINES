@@ -112,5 +112,22 @@ def VERIFICAR_OFFLINES(placas, placa, rows, devices_status):
                             print('------------')
                             break
 
-print('FUNÇÃO VERIFICAR OFFLINES V2 DO GITHUB CARREGADO COM SUCESSO !')
+# AQUI EU DEFINO AS VARIÁVEIS QUE VÃO COLORIR O TEXTO ASCII
+BLUE = '\033[94m'
+RESET = '\033[0m'
+
+# AQUI EU CRIO O TEXTO ASCII
+ascii_text = """
+ __     __ _____  ____   ___  _____  ___  ____     _     ____      ___   _____  _____  _      ___  _   _  _____  ____   __     __ ____  
+ \ \   / /| ____||  _ \ |_ _||  ___||_ _|/ ___|   / \   |  _ \    / _ \ |  ___||  ___|| |    |_ _|| \ | || ____|/ ___|  \ \   / /|___ \ 
+  \ \ / / |  _|  | |_) | | | | |_    | || |      / _ \  | |_) |  | | | || |_   | |_   | |     | | |  \| ||  _|  \___ \   \ \ / /   __) |
+   \ V /  | |___ |  _ <  | | |  _|   | || |___  / ___ \ |  _ <   | |_| ||  _|  |  _|  | |___  | | | |\  || |___  ___) |   \ V /   / __/ 
+    \_/   |_____||_| \_\|___||_|    |___|\____|/_/   \_\|_| \_\   \___/ |_|    |_|    |_____||___||_| \_||_____||____/     \_/   |_____|
+"""
+
+print(f"""
+
+{BLUE}CRIADOR: SAMUEL{ascii_text}{RESET}
+""")
+
 print('------------')
