@@ -62,7 +62,7 @@ def VERIFICAR_OFFLINES(placas, placa, rows, devices_status):
                     print('0')
                     print('------------')
     # SE O RASTREADOR NÃO FOR PRINCIPAL, ENTÃO ELE VAI EXECUTAR O QUE TÁ DENTRO DO ELSE (ELE VAI PROCURAR PELO SOMBRA)
-      elif placas[placa][1] == 'RASTREADOR SOMBRA':
+    elif placas[placa][1] == 'RASTREADOR SOMBRA':
             if len(devices_status) > 2:
                 # SE TIVER O RASTREADOR SOMBRA, PRINCIPAL E LORAWAN ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE ELIF
                 
@@ -111,7 +111,7 @@ def VERIFICAR_OFFLINES(placas, placa, rows, devices_status):
                             print(td[1])
                             print('------------')
                             break
-      elif placas[placa][1] == 'RASTREADOR MIGRADO':
+    elif placas[placa][1] == 'RASTREADOR MIGRADO':
           if len(devices_status) > 2:
                 # SE TIVER O RASTREADOR MIGRADO, SOMBRA E LORAWAN ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE ELIF
                 
@@ -160,7 +160,7 @@ def VERIFICAR_OFFLINES(placas, placa, rows, devices_status):
                             print(td[1])
                             print('------------')
                             break
-      elif placas[placa][1] == 'RASTREADOR SOMBRA MIGRADO':
+    elif placas[placa][1] == 'RASTREADOR SOMBRA MIGRADO':
           if len(devices_status) > 2:
                 # SE TIVER O RASTREADOR SOMBRA MIGRADO, PRINCIPAL E LORAWAN ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE ELIF
                 
