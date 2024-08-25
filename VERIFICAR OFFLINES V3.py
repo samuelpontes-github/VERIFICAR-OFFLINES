@@ -136,8 +136,8 @@ def VERIFICAR_OFFLINES(placas, placa, rows, devices_status):
                             print(td[1])
                             print('------------')
                             break
-            else:
-                # SE TIVER O RASTREADOR MIGRADO E SOMBRA ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE ELSE
+            elif len(devices_status) == 2:
+                # SE TIVER O RASTREADOR MIGRADO E SOMBRA ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE ELIF
                 # SE CASO FOR SOMBRA E NÃO TIVER MAIS 2 RASTREADORES, SEMPRE VAI TER O PRINCIPAL... NO FINAL SÃO 2 RASTREADORES
                 
                 # Acesse os <td> específicos dentro dos <tr> desejados
@@ -160,6 +160,19 @@ def VERIFICAR_OFFLINES(placas, placa, rows, devices_status):
                             print(td[1])
                             print('------------')
                             break
+            elif len(devices_status) == 1:
+                # SE TIVER APENAS O RASTREADOR MIGRADO ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE ELIF
+                
+                # Acesse os <td> específicos dentro dos <tr> desejados
+    
+                td1 = rows[1].find_elements(By.TAG_NAME, 'td')[2]
+                status = devices_status[0].get_attribute("data-original-title")
+    
+                if status == 'Off-line':
+                    print(td1.text+' ESTÁ OFFLINE !')
+                    print(devices_status[0].get_attribute("data-original-title"))
+                    print('0')
+                    print('------------')
     elif placas[placa][1] == 'RASTREADOR SOMBRA MIGRADO':
             if len(devices_status) > 2:
                 # SE TIVER O RASTREADOR SOMBRA MIGRADO, PRINCIPAL E LORAWAN ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE IF
