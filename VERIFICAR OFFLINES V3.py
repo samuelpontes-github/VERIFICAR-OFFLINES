@@ -202,7 +202,7 @@ def VERIFICAR_OFFLINES(placas, placa, rows, devices_status):
 
                     td_texto = td[0].text.lower()
     
-                     if td_texto.find('migrado') != -1:
+                    if td_texto.find('migrado') != -1:
                         if td_texto.find('sombra') != -1:
                             status = devices_status[td[1]].get_attribute("data-original-title")
                             if status == 'Off-line':
