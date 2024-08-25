@@ -2,7 +2,7 @@ def VERIFICAR_OFFLINES(placas, placa, rows, devices_status):
      # SE O RASTREADOR FOR PRINCIPAL ELE VAI EXECUTAR O QUE TÁ DENTRO DO IF (ELE VAI PROCURAR PELO PRINCIPAL)
     if placas[placa][1] == 'RASTREADOR PRINCIPAL':      
             if len(devices_status) > 2:
-                # SE TIVER O RASTREADOR PRINCIPAL, SOMBRA E LORAWAN ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE ELIF
+                # SE TIVER O RASTREADOR PRINCIPAL, SOMBRA E LORAWAN ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE IF
                 
                 # Acesse os <td> específicos dentro dos <tr> desejados
             
@@ -64,7 +64,7 @@ def VERIFICAR_OFFLINES(placas, placa, rows, devices_status):
     # SE O RASTREADOR NÃO FOR PRINCIPAL, ENTÃO ELE VAI EXECUTAR O QUE TÁ DENTRO DO ELSE (ELE VAI PROCURAR PELO SOMBRA)
     elif placas[placa][1] == 'RASTREADOR SOMBRA':
             if len(devices_status) > 2:
-                # SE TIVER O RASTREADOR SOMBRA, PRINCIPAL E LORAWAN ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE ELIF
+                # SE TIVER O RASTREADOR SOMBRA, PRINCIPAL E LORAWAN ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE IF
                 
                 # Acesse os <td> específicos dentro dos <tr> desejados
             
@@ -88,7 +88,7 @@ def VERIFICAR_OFFLINES(placas, placa, rows, devices_status):
                             print('------------')
                             break
             else:
-                # SE TIVER O RASTREADOR SOMBRA E PRINCIPAL ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE ELIF
+                # SE TIVER O RASTREADOR SOMBRA E PRINCIPAL ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE ELSE
                 # SE CASO FOR SOMBRA E NÃO TIVER MAIS 2 RASTREADORES, SEMPRE VAI TER O PRINCIPAL... NO FINAL SÃO 2 RASTREADORES
                 
                 # Acesse os <td> específicos dentro dos <tr> desejados
@@ -112,8 +112,8 @@ def VERIFICAR_OFFLINES(placas, placa, rows, devices_status):
                             print('------------')
                             break
     elif placas[placa][1] == 'RASTREADOR MIGRADO':
-          if len(devices_status) > 2:
-                # SE TIVER O RASTREADOR MIGRADO, SOMBRA E LORAWAN ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE ELIF
+            if len(devices_status) > 2:
+                # SE TIVER O RASTREADOR MIGRADO, SOMBRA E LORAWAN ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE IF
                 
                 # Acesse os <td> específicos dentro dos <tr> desejados
             
@@ -137,7 +137,7 @@ def VERIFICAR_OFFLINES(placas, placa, rows, devices_status):
                             print('------------')
                             break
             else:
-                # SE TIVER O RASTREADOR MIGRADO E SOMBRA ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE ELIF
+                # SE TIVER O RASTREADOR MIGRADO E SOMBRA ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE ELSE
                 # SE CASO FOR SOMBRA E NÃO TIVER MAIS 2 RASTREADORES, SEMPRE VAI TER O PRINCIPAL... NO FINAL SÃO 2 RASTREADORES
                 
                 # Acesse os <td> específicos dentro dos <tr> desejados
@@ -161,8 +161,8 @@ def VERIFICAR_OFFLINES(placas, placa, rows, devices_status):
                             print('------------')
                             break
     elif placas[placa][1] == 'RASTREADOR SOMBRA MIGRADO':
-          if len(devices_status) > 2:
-                # SE TIVER O RASTREADOR SOMBRA MIGRADO, PRINCIPAL E LORAWAN ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE ELIF
+            if len(devices_status) > 2:
+                # SE TIVER O RASTREADOR SOMBRA MIGRADO, PRINCIPAL E LORAWAN ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE IF
                 
                 # Acesse os <td> específicos dentro dos <tr> desejados
             
@@ -187,7 +187,7 @@ def VERIFICAR_OFFLINES(placas, placa, rows, devices_status):
                                 print('------------')
                                 break
             else:
-                # SE TIVER O RASTREADOR SOMBRA MIGRADO E PRINCIPAL ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE ELIF
+                # SE TIVER O RASTREADOR SOMBRA MIGRADO E PRINCIPAL ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE ELSE
                 # SE CASO FOR SOMBRA E NÃO TIVER MAIS 2 RASTREADORES, SEMPRE VAI TER O PRINCIPAL... NO FINAL SÃO 2 RASTREADORES
                 
                 # Acesse os <td> específicos dentro dos <tr> desejados
