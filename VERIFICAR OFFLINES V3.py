@@ -138,7 +138,6 @@ def VERIFICAR_OFFLINES(placas, placa, rows, devices_status):
                             break
             elif len(devices_status) == 2:
                 # SE TIVER O RASTREADOR MIGRADO E SOMBRA ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE ELIF
-                # SE CASO FOR SOMBRA E NÃO TIVER MAIS 2 RASTREADORES, SEMPRE VAI TER O PRINCIPAL... NO FINAL SÃO 2 RASTREADORES
                 
                 # Acesse os <td> específicos dentro dos <tr> desejados
             
@@ -201,7 +200,6 @@ def VERIFICAR_OFFLINES(placas, placa, rows, devices_status):
                                 break
             else:
                 # SE TIVER O RASTREADOR SOMBRA MIGRADO E PRINCIPAL ELE VAI EXECUTAR O QUE ESTÁ DENTRO DESSE ELSE
-                # SE CASO FOR SOMBRA E NÃO TIVER MAIS 2 RASTREADORES, SEMPRE VAI TER O PRINCIPAL... NO FINAL SÃO 2 RASTREADORES
                 
                 # Acesse os <td> específicos dentro dos <tr> desejados
             
