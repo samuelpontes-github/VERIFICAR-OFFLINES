@@ -1,0 +1,36 @@
+chatgpt eu fiz um código flask com python e automação selenium...
+
+Vou te explicar como funciona:
+
+PRIMEIRO: O USUÁRIO ESCREVE UMA TABELA JAVASCRIPT E DEPOIS MANDA PRO SITE...
+
+SEGUNDO: O SITE PEGA A TABELA JAVASCRIPT QUE O USUÁRIO MANDOU E DEPOIS EXECUTA UMA AUTOMAÇÃO SELENIUM NO MODO HEADLESS 
+
+OBSERVAÇÃO: A MINHA AUTOMAÇÃO SELENIUM NÃO ESTÁ NO CÓDIGO FLASK, ESTÁ EM UM ARQUIVO PYTHON SEPARADO QUE O MEU CÓDIGO FLASK PEGA E EXECUTA...
+
+A MINHA AUTOMAÇÃO SELENIUM SERVE PARA VERIFICAR TODAS AS PLACAS QUE O USUÁRIO MANDOU NA TABELA JAVASCRIPT ELA VERIFICA EM UM SITE ESPECÍFICO SE OS VEÍCULOS ESTÃO OFFLINES...
+
+A MINHA INTENÇÃO É O SEGUINTE... EU JÁ TENHO O CÓDIGO DA AUTOMAÇÃO SELENIUM FEITO, EU SÓ QUERIA QUE VOCÊ ADAPTASSE ELA PRA QUE EU CONSIGA USAR ELA NO CÓDIGO FLASK...
+
+A MINHA AUTOMAÇÃO SELENIUM VAI RETORNAR UMA TABELA PYTHON COM TODOS OS VEÍCULOS QUE ESTÃO OFFLINES...
+
+E EU VOU USAR ESSA TABELA PYTHON E VOU EXIBIR ELA EM UM RESULT CONTAINER NO MEU HTML...
+
+CALMA QUE EU VOU TE MANDAR O CÓDIGO DA MINHA AUTOMAÇÃO SELENIUM... SOMENTE DEPOIS VOCÊ MANDA AS RESPOSTAS PRA MIM OK ?
+
+------------
+
+Só mais uma coisa importante... você pode remover tudo o que está dentro do if status == 'Off-line':
+
+Dentro do if status == 'Off-line': você coloca pra adicionar [placas[placa][0], placas[placa][1]] na tabela de veículos offline e no final você coloca um break...
+
+CALMA QUE EU VOU TE MANDAR O CÓDIGO DA MINHA AUTOMAÇÃO SELENIUM... SOMENTE DEPOIS VOCÊ MANDA AS RESPOSTAS PRA MIM BLZ ?
+
+------------
+
+Agora você pode montar um código flask que vai pegar a tabela javascript que o usuário mandou 
+depois vai executar a automação selenium usando a tabela que o usuário mandou...
+
+No código da automação selenium o placas seria a tabela que o usuário mandou...
+
+Por fim o código flask vai pegar a tabela veiculos_offline que a automação selenium retornou e vai exibir ela em formato de tabela no html (na mesma página onde o cliente está visualizando)
